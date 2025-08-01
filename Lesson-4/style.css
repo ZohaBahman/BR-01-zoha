@@ -7,13 +7,13 @@
 a {
   text-decoration: none;
   color: rgb(86, 86, 86);
-  padding-left: 0px;
 }
 
 
  p {
   font-family: sans-serif;
   margin-bottom: 80px;
+  color: rgb(38, 38, 38);
 
  }
 
@@ -54,7 +54,7 @@ li {
   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-left: 0px;
-  list-style: none;
+  list-style:inside;
 }
 
 
