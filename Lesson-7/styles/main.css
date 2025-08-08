@@ -151,3 +151,31 @@ button {
 .hero_section {
     margin-top: 30px;
 }
+
+.tools_container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+.tools_title {
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 539px;
+    text-align: center;
+}
+
+.header_call_to_action {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.watch_video {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
