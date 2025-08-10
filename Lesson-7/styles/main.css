@@ -175,7 +175,57 @@ button {
 }
 
 .watch_video {
-    color: blue;
+    color: var(--accent-color);
     text-decoration: none;
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.watch_video_container {
+    margin-left: 30px;
+
+
+
+}
+
+.features_section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2F281E;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    margin-bottom: 54px;
+}
+
+.features_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    text-align: left;
+    gap: 20px;
+
+}
+
+.feature_item {
+    width: 100%;
+    max-width: 240px;
+}
+
+.features_description {
+    width: 100%;
+    max-width: 240px;
+    margin-top: 13px;
+}
+
+.features_icon {
+    margin-bottom: 30px;
 }
