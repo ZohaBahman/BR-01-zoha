@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #3C3C3C;
+    --accent-color: #18B5DC;
+
+}
+
+.header_container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.logo_link,
+.nav_container,
+.nav,
+.header_actions {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.button_transparent {
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    background-color: transparent;
+
+}
