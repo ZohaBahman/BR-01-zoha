@@ -1,0 +1,18 @@
+.footer {
+  margin: 40px auto 0;
+  text-align: center;
+}
+.footer .footer_container {
+  margin-bottom: 28px;
+}
+.footer .nav .nav_link {
+  font-size: 16px;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+.footer .media_link {
+  margin: 30px auto 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

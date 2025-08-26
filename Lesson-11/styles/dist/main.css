@@ -1,0 +1,18 @@
+body {
+  background-color: #3b3b3b;
+}
+
+.box {
+  background-color: pink;
+  font-size: 50px;
+  text-align: center;
+  color: #c92727;
+  width: 50%;
+  outline: 1px solid;
+}
+
+.flex_container {
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+}
