@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: englebert, serif;
+}
+
 .container {
   position: relative;
   height: 100vh;
@@ -30,6 +34,31 @@
   top: 450px;
 }
 
+.quote {
+  position: absolute;
+  font-size: 40px;
+  max-width: 400px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 85px;
+  color: black;
+  top: 265px;
+  overflow: hidden;
+  animation: typing-happy;
+}
+
+.quote-2 {
+  position: absolute;
+  font-size: 80px;
+  max-width: 400px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 85px;
+  color: black;
+  top: 265px;
+  overflow: hidden;
+}
+
 @keyframes openlid {
   0% {
     transform: translateX(0) translateY(15px) rotate(0deg);
@@ -44,6 +73,7 @@
     transform: translateX(0) translateY(15px) rotate(-5deg);
   }
   100% {
-    transform: translateX(0) translateY(-185px) rotate(0);
+    transform: translateX(0) translateY(-195px) rotate(0);
   }
 }
+@keyframes typing-happy {}

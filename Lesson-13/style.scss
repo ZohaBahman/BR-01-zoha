@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: englebert, serif;
 
 }
 
@@ -39,6 +40,45 @@ body {
     top: 450px;
  
 }
+ 
+
+.quote-container {
+    
+    
+    
+
+}
+
+
+.quote {
+    position: absolute;
+    font-size: 40px;
+    max-width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 85px;
+    color: rgb(0, 0, 0);
+    top: 265px;
+    overflow: hidden;
+    
+
+
+    animation: 
+    
+}
+
+
+.quote-2 {
+    position: absolute;
+    font-size: 80px;
+    max-width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 85px;
+    color: rgb(0, 0, 0);
+    top: 265px;
+    overflow: hidden;
+}
 
 @keyframes openlid {
     0% {
@@ -58,6 +98,13 @@ body {
     }
 
     100% {
-        transform: translateX(0) translateY(-185px) rotate(0);
+        transform: translateX(0) translateY(-195px) rotate(0);
     }
 }
+
+
+@keyframes typing-happy {
+
+}
+
+
