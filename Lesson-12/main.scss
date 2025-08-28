@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: serif;
     display: flex;
     justify-content: center;
@@ -32,9 +32,10 @@
     
     transform-style: preserve-3d;
     transition: transform 1s;
+    perspective: 1000px;
 
     &:hover {
-        transform: rotateY('180deg');
+        transform: rotateY(180deg);
     }
 
 }
@@ -58,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    backface-visibility: hidden;
     
 }
 
@@ -65,15 +67,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateY(0deg);
 
-    img {
-        max-width: 140px;
-    }
+}
+
+.front img {
+    max-width: 200px;
 }
 
 .back {
-    background-color: rgb(223, 199, 184);
-    transform: rotateY('180');
+    background-color: rgb(242, 222, 209);
+    transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,5 +86,6 @@
         font-weight: bold;
         text-transform: capitalize;
         color: #c92c2c;
+        transform: rotateY(0deg);
     }
 }

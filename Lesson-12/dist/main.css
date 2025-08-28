@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: serif;
   display: flex;
   justify-content: center;
@@ -31,9 +31,10 @@
   cursor: pointer;
   transform-style: preserve-3d;
   transition: transform 1s;
+  perspective: 1000px;
 }
 .box:hover {
-  transform: rotateY("180deg");
+  transform: rotateY(180deg);
 }
 
 .container {
@@ -52,20 +53,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
 }
 
 .front {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotateY(0deg);
 }
+
 .front img {
-  max-width: 140px;
+  max-width: 200px;
 }
 
 .back {
-  background-color: #dfc7b8;
-  transform: rotateY("180");
+  background-color: #f2ded1;
+  transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +78,5 @@
   font-weight: bold;
   text-transform: capitalize;
   color: #c92c2c;
+  transform: rotateY(0deg);
 }
