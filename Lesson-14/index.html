@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="POST">
+            <!-- <input type="text" value="John Doe" name="user_name"> -->
+            <!-- <input list="browser" name="browser">
+            <datalist id="browser">
+                <option value="Chrome">
+                <option value="Safari">
+                <option value="Firefox">
+            </datalist> -->
+            <label class="input_label" for="user_name">
+                Name:
+                <input type="text" name="user_name" placeholder="add your name">
+            </label>
+
+            <label class="input_label">
+                Email:
+                <input type="email" name="email" autocomplete="email" placeholder="mail@mail.com">
+            </label>
+
+            <label class="input_label">
+                Password:
+                <input type="password" name="password" autocomplete="password" placeholder="********">
+            </label>
+
+            <label class="input_label">
+                Phone:
+                <input type="phone" name="user-phone" placeholder="+88 888 8888">
+            </label>
+
+
+            <div class="submit">
+                <input type="submit" value="send data">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Englebert&family=Homemade+Apple&family=Lato:wght@300;400;700&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/main_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <span class="heading">
+            <h1>Create an Account</h1>
+        </span>
+        <form action="#" method="post">
+            <div class="flex_row">
+                <div class="first_name">
+                    <label class="input_label">
+                        first Name
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div class="last_name">
+                    <label class="input_label">
+                        Last Name
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+
+            <div class="email">
+                <label class="input_label">
+                    E-mail
+                    <input type="text">
+                </label>
+                <p>We'll never share your email with anyone else.</p>
+            </div>
+
+
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    <span class="custom_radio"></span>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    <span class="custom_radio"></span>
+                    Female
+                </label>
+            </div>
+
+
+            <!-- <div class="flex_row">
+                <div class="country">
+                    <label class="input_label">
+                        country
+                        <input type="text">
+                    </label>
+                </div> -->
+
+            <label class="input_label">
+                country
+            </label>
+            <select name="country" id="">
+                <option value="stockholm">stockhom</option>
+                <option value="gothenburg">gothenburg</option>
+                <option value="malmo">malmo</option>
+            </select>
+
+            <div class="city">
+                <label class="input_label">
+                    city
+                    <input type="text">
+                </label>
+            </div>
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Sign up">
+    </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
