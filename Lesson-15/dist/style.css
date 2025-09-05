@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  font-family: "Muli", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #111111;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.nav a {
+  margin-left: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 40px;
+  margin-top: 95px;
+}
+
+.sub_heading {
+  color: #4A4FF2;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.heading_text {
+  width: 100%;
+  max-width: 635px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #4A4FF2;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #999;
+}
+
+.small_text {
+  color: #111111;
+  opacity: 60%;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 9px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: darkgray;
+}
+
+.grid {
+  border: 5px solid white;
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 357px);
+  grid-template-rows: repeat(5, 357px);
+  gap: 20px;
+}
+
+.item_2 {
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.awards_intro {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.promo_text {
+  font-size: 28px;
+  color: #111111;
+  width: 100%;
+  max-width: 635px;
+  font-weight: bold;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap: 66px;
+  list-style: none;
+  color: #111111;
+  opacity: 60%;
+}
+
+hr {
+  width: 95%;
+  height: 2px;
+  color: solid #999;
+}
+
+.awards_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.award_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.award_line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  padding: 20px 40px;
+}
+
+.award_line2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  padding: 20px 40px;
+}
+
+.award_explanation {
+  max-width: 190px;
+}
+
+p {
+  font-size: 16px;
+  color: #111111;
+}
+
+.text {
+  font-size: 16px;
+  color: #111111;
+  opacity: 60%;
+}
