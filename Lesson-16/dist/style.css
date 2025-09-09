@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crown {
+  width: 200px;
+  height: 200px;
+  fill: none;
+  stroke: #111;
+  stroke-width: 20px;
+  stroke-linejoin: round;
+}
+
+line {
+  stroke: #111;
+  stroke-width: 20px;
+  stroke-linecap: round;
+}
+
+.emoji {
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+}
+
+.youtube_logo {
+  width: 200px;
+  height: 200px;
+}
+
+.calculator {
+  width: 200px;
+  height: 200px;
+}
+
+.key {
+  width: 200px;
+  height: 200px;
+  fill: none;
+  stroke: #111;
+  stroke-width: 35px;
+}
