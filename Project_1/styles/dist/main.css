@@ -1,0 +1,584 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero_section {
+  background-image: url("../../assets/Hero_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 1770px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero_section .hero_content {
+  width: 100%;
+}
+.hero_section .hero_content .hero_text {
+  font-family: "josefin sans", sans-serif;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.hero_section .hero_content .hero_text .hero_title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.6rem;
+}
+.hero_section .hero_content .hero_text .hero_description {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.4375rem;
+}
+.hero_section .hero_content .serach_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 653px;
+  margin-top: 1rem;
+}
+.hero_section .hero_content .serach_container .search_bar {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  overflow: hidden;
+  width: 100%;
+  max-width: 653px;
+}
+.hero_section .hero_content .serach_container .search_bar input {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  color: #999999;
+  border: none;
+  padding: 1.2rem;
+  letter-spacing: 0.175rem;
+  outline: none;
+  width: 100%;
+  max-width: 503px;
+  min-width: 20rem;
+}
+.hero_section .hero_content .serach_container .search_bar input::placeholder {
+  text-align: center;
+}
+.hero_section .hero_content .serach_container .search_bar button {
+  font-family: "aleo", sans-serif;
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  background: #5474FD;
+  width: 150px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.25s ease;
+}
+.hero_section .hero_content .serach_container .search_bar button:hover {
+  background-color: #2949da;
+}
+.hero_section .hero_content .scroll_container {
+  margin-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.hero_section .hero_content .scroll_container .scroll {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.175rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.hero_section .hero_content .scroll_container .scroll:hover {
+  color: #d8d8d8;
+}
+.hero_section .hero_content .scroll_container .scroll_icon {
+  transition: color 0.25s ease;
+}
+.hero_section .hero_content .scroll_container .scroll_icon:hover {
+  color: #d8d8d8;
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    height: auto;
+    padding: 5rem 1rem;
+  }
+  .hero_section .hero_content .hero_text {
+    margin-bottom: 2rem;
+  }
+  .hero_section .hero_content .serach_container .search_bar {
+    flex-direction: column;
+  }
+  .hero_section .hero_content .serach_container .search_bar input, .hero_section .hero_content .serach_container .search_bar button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+.nav_container {
+  background-color: #5474FD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 20rem;
+}
+.nav_container .nav_list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+}
+.nav_container .nav_link {
+  font-family: "aleo", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.nav_container .nav_link:hover {
+  color: #d8d8d8;
+}
+
+@media (max-width: 768px) {
+  .nav_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.why_choose_us_section {
+  background-image: url("../../assets/why_choose_us_imge.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  max-width: 1770px;
+  height: 100vh;
+  padding: 100px 0;
+}
+.why_choose_us_section .why_choose_us_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.why_choose_us_section .why_text {
+  width: 560px;
+  padding-top: 100px;
+}
+.why_choose_us_section .why_text .why_title {
+  font-family: "aleo", sans-serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 3.125rem;
+}
+.why_choose_us_section .why_text .why_description {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #E8E8E8;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+.why_choose_us_section .why_text .button {
+  display: inline-block;
+  background-color: #5474FD;
+  color: #ffffff;
+  padding: 25px 40px;
+  text-decoration: none;
+  font-family: "aleo", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.why_choose_us_section .why_text .button .button::after {
+  position: absolute;
+  background-color: #496BFE;
+  padding: 25px 40px;
+  transform: skewY(25deg);
+  z-index: -1;
+}
+.why_choose_us_section .why_text .button:hover {
+  background-color: #2949da;
+}
+.why_choose_us_section .why_images {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.why_choose_us_section .why_images .img_1 {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+.why_choose_us_section .why_images .img_2 {
+  width: 100%;
+  max-width: 350px;
+  position: absolute;
+  left: 90px;
+  top: 230px;
+}
+@media (max-width: 768px) {
+  .why_choose_us_section .why_choose_us_section .why_choose_us_container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.icons_section {
+  background-color: #333333;
+}
+.icons_section .icons_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10.5rem;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 6.25rem;
+}
+.icons_section .icons_container .icon_text {
+  font-family: "aleo", sans-serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 2.25rem;
+}
+.icons_section .icons_container .icon_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6.25rem;
+}
+.icons_section .icons_container .icon_block .icons {
+  position: relative;
+  z-index: 1;
+}
+.icons_section .icons_container .icon_block .icon_bg {
+  position: absolute;
+  height: 100px;
+  background-color: #c00707;
+}
+
+@media (max-width: 768px) {
+  .icons_container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+.booking_container {
+  background-image: url(../../assets/villa_image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 20.5rem;
+  padding-bottom: 6.25rem;
+}
+.booking_container .booking_content {
+  background-color: rgba(35, 35, 35, 0.9);
+  width: 50%;
+  max-width: 543px;
+  padding: 2.8rem 2.1rem;
+}
+.booking_container .booking_content .booking_label {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #E8E8E8;
+}
+.booking_container .booking_content .booking_title {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.booking_container .booking_content .booking_description {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #E8E8E8;
+  margin-top: 1.5rem;
+}
+.booking_container .booking_content .button {
+  display: inline-block;
+  background-color: #5474FD;
+  color: #ffffff;
+  padding: 25px 40px;
+  text-decoration: none;
+  font-family: "aleo", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin-top: 3rem;
+}
+.booking_container .booking_content .button:hover {
+  background-color: #2949da;
+}
+
+@media (max-width: 1200px) {
+  .booking_container {
+    padding-left: 4vw;
+    padding-bottom: 4vh;
+  }
+  .booking_container .booking_content {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .booking_container {
+    padding-left: 3vw;
+    padding-bottom: 3vh;
+  }
+  .booking_container .booking_content {
+    width: 80%;
+    padding: 2rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .booking_container {
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+  }
+  .booking_container .booking_content {
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+}
+.booking_container2 {
+  background-image: url(../../assets/cliff_image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20.5rem;
+  padding-bottom: 6.25rem;
+}
+.booking_container2 .booking_content2 {
+  background-color: rgba(35, 35, 35, 0.9);
+  width: 50%;
+  max-width: 543px;
+  padding: 2.8rem 2.1rem;
+}
+.booking_container2 .booking_content2 .booking_label2 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #E8E8E8;
+}
+.booking_container2 .booking_content2 .booking_title2 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.booking_container2 .booking_content2 .booking_description2 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #E8E8E8;
+  margin-top: 1.5rem;
+}
+.booking_container2 .booking_content2 .button {
+  display: inline-block;
+  background-color: #5474FD;
+  color: #ffffff;
+  padding: 25px 40px;
+  text-decoration: none;
+  font-family: "aleo", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin-top: 3rem;
+}
+.booking_container2 .booking_content2 .button:hover {
+  background-color: #2949da;
+}
+
+@media (max-width: 1200px) {
+  .booking_container2 {
+    padding-right: 4vw;
+    padding-bottom: 4vh;
+  }
+  .booking_container2 .booking_content {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .booking_container2 {
+    padding-right: 3vw;
+    padding-bottom: 3vh;
+  }
+  .booking_container2 .booking_content2 {
+    width: 80%;
+    padding: 2rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .booking_container2 {
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+  }
+  .booking_container2 .booking_content2 {
+    width: 95%;
+    padding: 1.5rem 1rem;
+  }
+}
+.testimonials_section {
+  background-image: url(../../assets/climber_image_opacity.jpg);
+  min-height: 730px;
+  width: 100%;
+}
+.testimonials_section .testimonials_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+  font-family: "aleo", sans-serif;
+  color: #ffffff;
+  padding-top: 7.8rem;
+}
+.testimonials_section .testimonials_content .testimonials_title {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+.testimonials_section .testimonials_content .testimonials_text {
+  flex: 1;
+  padding: 3rem;
+}
+.testimonials_section .testimonials_content .testimonials_text .name {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #E8E8E8;
+  text-transform: uppercase;
+}
+.testimonials_section .testimonials_content .testimonials_text .comment {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: normal;
+  max-width: 581px;
+}
+.testimonials_section .testimonials_content .testimonials_text .comment span i {
+  color: #5474FD;
+  font-size: 3.5rem;
+  margin-right: 0.5rem;
+}
+.testimonials_section .testimonials_cart {
+  background: #333333;
+  width: 100%;
+  max-width: 1115px;
+  display: flex;
+  flex-direction: row;
+  height: 287px;
+}
+.testimonials_section .testimonials_cart .testimonials_photo img {
+  max-width: 445px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .testimonials_cart {
+    flex-direction: column;
+    height: auto;
+  }
+}
+footer {
+  background-color: #232323;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 7.5rem 0 3.75rem;
+}
+.footer_container .footer_text {
+  font-family: "josefin sans", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.footer_container .footer_text .footer_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.footer_container .footer_text .footer_description {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.footer_container .footer_icons {
+  transition: color 3s ease;
+}
+.footer_container .footer_icons a {
+  text-decoration: none;
+  padding: 0.6rem;
+  color: #E8E8E8;
+}
+.footer_container .footer_icons a:hover {
+  color: #5474FD;
+}

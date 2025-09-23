@@ -1,0 +1,72 @@
+body {
+  background-color: #f1e9e9;
+}
+
+.box {
+  background-color: pink;
+  height: 400px;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .box {
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    background-color: rebeccapurple;
+  }
+}
+@media screen and (min-width: 992px) {
+  .box {
+    background-color: lightcoral;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .box {
+    background-color: darkblue;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .box {
+    background-color: greenyellow;
+  }
+}
+
+.container {
+  background-color: aliceblue;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  width: min(100%, 1200px);
+}
+
+.product_card {
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.product_image {
+  width: 100%;
+}
+
+.product_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .product_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .product_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
