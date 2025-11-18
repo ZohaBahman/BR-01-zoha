@@ -1,0 +1,211 @@
+$primary-color: #2c3e50;
+$secondary-color: #49b8fe;
+$accent-color: #e74c3c;
+$background-color: #ecf0f1;
+$text-color: #2c3e50;
+$white: #ffffff;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-style {
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    padding: 20px;
+}
+
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #041d35 0%, #0984e3 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: $text-color;
+}
+
+
+h1 {
+    text-align: center;
+    color: $white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.search-box {
+    @include flex-center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    #cityInput {
+        padding: 15px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        width: 300px;
+        box-shadow: $shadow;
+        transition: all 0.3s ease;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #searchBtn {
+        padding: 15px 30px;
+        background: $secondary-color;
+        color: $white;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: $shadow;
+
+        &:hover {
+            background: darken($secondary-color, 10%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
+
+
+.result {
+    @include flex-center;
+    
+    .loading, .error {
+        @include card-style;
+        text-align: center;
+        font-size: 18px;
+        color: $text-color;
+    }
+
+    .error {
+        color: $accent-color;
+    }
+}
+
+
+.weather-card {
+    @include card-style;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+
+    .location {
+        margin-bottom: 20px;
+        
+        h2 {
+            color: $primary-color;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+
+        .local-time {
+            color: lighten($text-color, 20%);
+            font-size: 0.9rem;
+        }
+    }
+
+    .weather-main {
+        @include flex-center;
+        justify-content: space-around;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .temperature {
+            .temp {
+                font-size: 3rem;
+                font-weight: bold;
+                color: $secondary-color;
+                display: block;
+            }
+
+            .feels-like {
+                color: lighten($text-color, 20%);
+                font-size: 0.9rem;
+            }
+        }
+
+        .condition {
+            @include flex-center;
+            flex-direction: column;
+            gap: 10px;
+
+            .weather-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .condition-text {
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .weather-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+
+        .detail-item {
+            background: lighten($background-color, 5%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .label {
+                font-size: 0.8rem;
+                color: lighten($text-color, 30%);
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
