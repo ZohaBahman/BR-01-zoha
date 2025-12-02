@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("../assets/Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  opacity: 0.92;
+  background: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+}
+.hero_text {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero_text .hero_title {
+  font-weight: bold;
+  margin: 0 auto 40px;
+  letter-spacing: 10px;
+}
+@media (min-width: 1024px) {
+  .hero_text .hero_title {
+    font-size: 80px;
+  }
+}
+.hero_text .hero_subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  letter-spacing: 6px;
+}
+.hero .slick-dots {
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+}
+.hero .slick-dots li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.hero .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero .slick-active button,
+.hero .slick-dots button:hover {
+  background-color: white;
+}
+
+/* ============================
+   HEADER
+============================ */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 10;
+}
+.header .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo img {
+  width: auto;
+  height: 40px;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  white-space: nowrap;
+}
+.header_menu li {
+  position: relative;
+  padding-left: 15px;
+}
+.header_menu li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+  min-width: 150px;
+}
+.header_menu li a::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.header_menu li a:hover::before {
+  background-color: white;
+}
+.header_socials {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 20px;
+}
+.header_socials a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+/* ============================
+   WJAT WE DO
+============================ */
