@@ -17,7 +17,7 @@ ol {
 
 .hero {
   min-height: 100vh;
-  background-image: url("../assets/Hero.jpg");
+  background-image: url("../../assets/Hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -83,6 +83,26 @@ ol {
 .hero .slick-active button,
 .hero .slick-dots button:hover {
   background-color: white;
+}
+.hero .scroll_down_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s ease;
+  outline: none;
+  border: none;
+}
+.hero .scroll_down_btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* ============================
@@ -159,5 +179,295 @@ ol {
 }
 
 /* ============================
-   WJAT WE DO
+   WHAT WE DO
 ============================ */
+.what_we_do {
+  padding: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+.what_we_do .section_header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.what_we_do .section_header .section_line {
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #2C4058;
+  margin: 0 auto 30px;
+}
+.what_we_do .section_header .section_title {
+  font-size: 44px;
+  color: #2C4058;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 180px;
+}
+.what_we_do .work_item {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 140px;
+  position: relative;
+}
+.what_we_do .work_item_image_wrapper {
+  position: relative;
+  width: 50%;
+  transition: all 0.9s ease;
+  margin-bottom: 130px;
+}
+.what_we_do .work_item_bg {
+  position: absolute;
+  width: 585px;
+  height: 470px;
+  top: -55px;
+  left: -120px;
+  z-index: -1;
+}
+.what_we_do .work_item_bg.bg_blue {
+  background: #55B7FF;
+}
+.what_we_do .work_item_bg.bg_purple {
+  background: #7E5AFF;
+  right: -220px;
+  top: -55px;
+  left: auto;
+}
+.what_we_do .work_item_image {
+  width: 100%;
+  min-width: 630px;
+  display: block;
+}
+.what_we_do .work_item_subtitle {
+  font-size: 22px;
+  color: #2C4058;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.what_we_do .work_item_title {
+  font-size: 44px;
+  font-weight: bold;
+  color: #2C4058;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.what_we_do .work_item_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #2C4058;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  max-width: 470px;
+}
+.what_we_do .work_item_btn {
+  display: inline-block;
+  border: 1px solid #2C4058;
+  padding: 15px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 60px;
+  transition: 0.3s ease;
+}
+.what_we_do .work_item_btn:hover {
+  background: #c0d9f8;
+}
+.what_we_do .work_item_location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: black;
+}
+@media (max-width: 1024px) {
+  .what_we_do .work_item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .what_we_do .work_item_content, .what_we_do .work_item_image_wrapper {
+    width: 100%;
+  }
+}
+
+/* ============================
+   News
+============================ */
+.news {
+  padding: 120px 0;
+  background-image: url("../../assets/city_illustartion.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.news::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  opacity: 0.92;
+  background: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+  z-index: 1;
+}
+.news .news_container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+.news .section_header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.news .section_header .section_line {
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: white;
+  margin: 0 auto 30px;
+}
+.news .section_header .section_title {
+  font-size: 44px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 180px;
+}
+.news .city_illustation {
+  display: flex;
+}
+.news .news_slider .news_item {
+  display: flex;
+  flex-direction: column;
+  height: 514px;
+  background: white;
+  overflow: hidden;
+  margin: 0 20px;
+  color: #2C4058;
+  max-width: 370px;
+}
+.news .news_slider .news_item_image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.news .news_slider .news_item_content {
+  padding: 30px 20px;
+}
+.news .news_slider .news_item_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.news .news_slider .news_item_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.news .news_slider .news_item_author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+}
+.news .news_slider .news_item_author_img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.news .news_slider .news_item_author_name {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.news .news_slider .news_item_author_date {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #55B7FF;
+}
+.news .news_arrow {
+  position: absolute;
+  top: 65%;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+.news .news_arrow.news_arrow_prev {
+  left: -60px;
+}
+.news .news_arrow.news_arrow_next {
+  right: -60px;
+}
+.news .news_arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.news .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+.news .slick-dots li {
+  margin: 0;
+}
+.news .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.news .slick-active button,
+.news .slick-dots button:hover {
+  background-color: white;
+}
+
+/* ============================
+   CONTACT & MAP 
+============================ */
+.contact_section {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-top: 200px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.contact_card {
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  background: white;
+  padding: 60px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
