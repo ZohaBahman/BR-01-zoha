@@ -1,0 +1,23 @@
+body {
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark_theme {
+    background-color: rgb(13, 13, 13);
+    color: azure;
+}

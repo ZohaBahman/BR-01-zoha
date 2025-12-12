@@ -450,14 +450,6 @@ ol {
 .contact_section {
   position: relative;
   width: 100%;
-  height: 550px;
-  margin-top: 200px;
-}
-
-#map {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1);
 }
 
 .contact_card {
@@ -470,4 +462,9 @@ ol {
   padding: 60px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   z-index: 10;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
 }
