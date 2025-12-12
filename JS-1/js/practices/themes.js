@@ -1,10 +1,12 @@
 const btn = document.getElementById("theme_btn");
 
-btn.addEventListener("click", () =>) {
-    document.body.classList.toggle('dark_theme')
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark_theme");
 
-};
+    if (document.body.classList.contains("dark_theme")) {
+        btn.textContent = "switch to light";
+    } else {
+        btn.textContent = "switch to dark"
+    }
+});
 
-if () {
-
-}
