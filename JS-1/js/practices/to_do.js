@@ -1,5 +1,22 @@
-const input = document.getElementById("task_input");
-const addBtn = document.getElementById("add_btn");
-const list = document.getElementById("task_list");
+const input = document.getElementById("todoInput");
+const button = document.getElementById("addBtn");
+const list = document.getElementById("todoList");
 
-f
+
+
+function addTodo() {
+    const text = input.value;
+
+    if (text === "") {
+        alert("please enter text");
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.textContent = text;
+    list.appendChild(li);
+
+    input.value = "";
+}
+
+button.addEventListener("click", addTodo);
